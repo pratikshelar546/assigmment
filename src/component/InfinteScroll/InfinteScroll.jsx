@@ -14,7 +14,7 @@ const InfinteScroll = () => {
     const newData = await fetchData.json();
     setPostData((prevData) => [...prevData, ...newData]);
   };
-
+console.log(start,setLimit);
   useEffect(() => {
     if (inView) {
       setPage((prevPage) => prevPage + 1);
